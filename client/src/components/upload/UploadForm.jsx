@@ -132,7 +132,7 @@ export default function UploadForm() {
       );
 
       await axios.post(
-        "http://localhost:5000/api/posts",
+        "https://artverse-backend-k1e8.onrender.com/api/posts",
         data
       );
 

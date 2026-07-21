@@ -30,7 +30,7 @@ export default function RegisterForm() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://artverse-backend-k1e8.onrender.com/api/auth/register",
         formData
       );
 
