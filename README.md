@@ -397,7 +397,7 @@ http://localhost:3000
 ### Backend
 
 ```txt
-https://artverse-backend-k1e8.onrender.com
+https://artverse-backend-cg83.onrender.com/
 ```
 
 ---
