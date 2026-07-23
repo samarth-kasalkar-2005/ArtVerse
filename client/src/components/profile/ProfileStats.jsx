@@ -21,7 +21,7 @@ export default function ProfileStats() {
       try {
 
         const res = await axios.get(
-          "https://artverse-backend-cg83.onrender.com//api/posts"
+          "https://artverse-backend-cg83.onrender.com/api/posts"
         );
 
         setPosts(res.data);

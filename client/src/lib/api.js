@@ -1,4 +1,4 @@
-import axios from "axios";
+import API from "@/lib/api";
 
 const API = axios.create({
   baseURL: "https://artverse-backend-cg83.onrender.com/api",

@@ -42,7 +42,7 @@ export default function ProfileHeader() {
       try {
 
         await axios.put(
-          "https://artverse-backend-cg83.onrender.com//api/users/follow",
+          "https://artverse-backend-cg83.onrender.com/api/users/follow",
           {
             currentUserId:
               user._id,

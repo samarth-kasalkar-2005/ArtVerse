@@ -32,7 +32,7 @@ export default function ExploreGrid({
       try {
 
         const res = await axios.get(
-          "https://artverse-backend-cg83.onrender.com//api/posts"
+          "https://artverse-backend-cg83.onrender.com/api/posts"
         );
 
         setPosts(res.data);
@@ -43,7 +43,7 @@ export default function ExploreGrid({
           try {
 
             await axios.put(
-              `https://artverse-backend-cg83.onrender.com//api/posts/${post._id}/view`
+              `https://artverse-backend-cg83.onrender.com/api/posts/${post._id}/view`
             );
 
           } catch (error) {
@@ -184,12 +184,12 @@ export default function ExploreGrid({
                       try {
 
                         await axios.put(
-                          `https://artverse-backend-cg83.onrender.com//api/posts/${post._id}/like`
+                          `https://artverse-backend-cg83.onrender.com/api/posts/${post._id}/like`
                         );
 
                         const res =
                           await axios.get(
-                            "https://artverse-backend-cg83.onrender.com//api/posts"
+                            "https://artverse-backend-cg83.onrender.com/api/posts"
                           );
 
                         setPosts(res.data);
@@ -288,7 +288,7 @@ export default function ExploreGrid({
                         try {
 
                           await axios.post(
-                            `https://artverse-backend-cg83.onrender.com//api/posts/${post._id}/comment`,
+                            `https://artverse-backend-cg83.onrender.com/api/posts/${post._id}/comment`,
                             {
                               username:
                                 "Samarth",
@@ -298,7 +298,7 @@ export default function ExploreGrid({
 
                           const res =
                             await axios.get(
-                              "https://artverse-backend-cg83.onrender.com//api/posts"
+                              "https://artverse-backend-cg83.onrender.com/api/posts"
                             );
 
                           setPosts(res.data);

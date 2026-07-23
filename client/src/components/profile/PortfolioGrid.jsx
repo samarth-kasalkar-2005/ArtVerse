@@ -33,7 +33,7 @@ export default function PortfolioGrid() {
           );
 
         const res = await axios.get(
-          "https://artverse-backend-cg83.onrender.com//api/posts"
+          "https://artverse-backend-cg83.onrender.com/api/posts"
         );
 
         // FILTER USER POSTS

@@ -132,7 +132,7 @@ export default function UploadForm() {
       );
 
       await axios.post(
-        "https://artverse-backend-cg83.onrender.com//api/posts",
+        "https://artverse-backend-cg83.onrender.com/api/posts",
         data
       );
 

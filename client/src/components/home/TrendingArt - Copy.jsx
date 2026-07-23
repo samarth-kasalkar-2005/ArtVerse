@@ -21,7 +21,7 @@ export default function TrendingArt() {
       try {
 
         const res = await axios.get(
-          "https://artverse-backend-cg83.onrender.com//api/posts"
+          "https://artverse-backend-cg83.onrender.com/api/posts"
         );
 
         // SHOW ONLY LATEST 6

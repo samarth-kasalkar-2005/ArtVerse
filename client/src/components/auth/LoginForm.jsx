@@ -33,7 +33,7 @@ export default function LoginForm() {
     try {
 
       const res = await axios.post(
-        "https://artverse-backend-cg83.onrender.com//api/auth/login",
+        "https://artverse-backend-cg83.onrender.com/api/auth/login",
         formData
       );
 
