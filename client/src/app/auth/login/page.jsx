@@ -48,23 +48,22 @@ export default function LoginPage() {
 
       setLoading(true);
 
-        await axios.post(
+        const res = await axios.post(
           "https://artverse-backend-cg83.onrender.com/api/auth/login",
           formData
         );
-      // SAVE TOKEN
-      localStorage.setItem(
-        "token",
-        res.data.token
-      );
 
-      // SAVE USER
-      localStorage.setItem(
-        "user",
-        JSON.stringify(
-          res.data.user
-        )
-      );
+        // SAVE TOKEN
+        localStorage.setItem(
+          "token",
+          res.data.token
+        );
+
+        // SAVE USER
+        localStorage.setItem(
+          "user",
+          JSON.stringify(res.data.user)
+        );
 
       setLoading(false);
 
