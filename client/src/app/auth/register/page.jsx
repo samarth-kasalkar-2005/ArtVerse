@@ -60,14 +60,16 @@ export default function RegisterPage() {
 
       router.push("/auth/login");
 
-    } catch (error) {
-
-      console.log(error);
+    }catch (error) {
+      console.log("FULL ERROR:", error);
+      console.log("Response:", error.response);
+      console.log("Status:", error.response?.status);
+      console.log("Data:", error.response?.data);
 
       setLoading(false);
 
       alert(
-        "Registration failed ❌"
+        error.response?.data?.message || "Registration failed"
       );
     }
   };
