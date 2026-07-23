@@ -50,8 +50,10 @@ export default function RegisterPage() {
 
       setLoading(true);
 
-      await API.post("/auth/register", formData);
-
+        await axios.post(
+          "https://artverse-backend-cg83.onrender.com/api/auth/register",
+          formData
+        );
       setLoading(false);
 
       alert(
